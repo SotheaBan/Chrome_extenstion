@@ -1,0 +1,32 @@
+{
+    "manifest_version": 3,
+    "name": "My extension",
+    "version": "1.0",
+    "description": "A Chrome extension built with React",
+    "action": {
+      "default_popup": "index.html"
+    },
+    "permissions": [
+      "scripting"
+    ],
+    "host_permissions": [
+      "http://*/*",
+      "https://*/*"
+    ],
+    "icons": {
+      "128": "vite.svg"
+    },
+    "content_security_policy": {
+      "script-src": [
+        "'self'",
+        "'wasm-unsafe-eval'",
+        "'inline-speculation-rules'",
+        "https://www.gstatic.com",
+        "https://www.googleapis.com",
+        "http://localhost:*",
+        "https://localhost:*"
+      ],
+      "object-src": "'self'"
+    }
+  }
+  
